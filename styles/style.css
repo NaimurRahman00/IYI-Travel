@@ -3,6 +3,7 @@
 
 :root {
     --primary-color: #FF5400;
+    --primary-font-size: 16px;
 }
 
 * {
@@ -30,6 +31,10 @@ a {
 .active {
     color: var(--primary-color) !important;
     font-weight: 700 !important;
+}
+.bg-active {
+    background-color: #FF5400;
+    color: #FFF;
 }
 
 /* Header */
@@ -61,6 +66,60 @@ a {
     display: none;
 }
 
+/* Banner */
+.banner-container {
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Hero.png");
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 5rem;
+}
+.banner-container h1 {
+    font-size: 6.4rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 2.4rem;
+    padding-top: 10.6rem;
+    text-align: center;
+}
+.banner-container p {
+    width: 57%;
+    margin: auto;
+    text-align: center;
+    font-size: var(--primary-font-size);
+    color: #fff;
+    line-height: 26px;
+    margin-bottom: 4.8rem;
+}
+.banner-container .find-n-book {
+    padding-bottom: 10.6rem;
+}
+.banner-container .find-n-book form {
+    background-color: rgba(255, 255, 255, 0.30);
+    width: 65.5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 2.4rem;
+    padding: 1.6rem;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+.banner-container .find-n-book form input, select, button {
+    flex: 1;
+    padding: 1.6rem;
+    font-size: var(--primary-font-size);
+    border: none;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    background-color: #FFF;
+    outline: none;
+    appearance: none;
+}
+
 
 
 
@@ -76,6 +135,7 @@ a {
     .container {
         width: 89.3%;
     }
+    /* header */
     .navbar {
         margin-top: 2rem;
     }
@@ -92,6 +152,32 @@ a {
     .hamburger {
         display: inline-block;
         font-size: 2.4rem;
+    }
+    /* Banner */
+    .banner-container {
+        background-size: cover;
+        background-position: center;
+        margin-top: 2rem;
+    }
+    .banner-container h1 {
+        font-size: 2.2rem;
+        padding-top: 3.2rem;
+        margin-bottom: .8rem;
+    }
+    .banner-container p {
+        width: 90%;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        margin-bottom: 3.2rem;
+    }
+    .banner-container .find-n-book form {
+        flex-direction: column;
+    }
+    .banner-container .find-n-book form {
+        width: 85%;
+    }
+    .banner-container .find-n-book {
+        padding-bottom: 3.2rem;
     }
     
 }
