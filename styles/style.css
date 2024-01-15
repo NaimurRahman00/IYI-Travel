@@ -18,9 +18,9 @@ html, body {
 a {
     text-decoration: none;
 }
-/* section {
-    margin: 8rem;
-} */
+section {
+    margin: 10rem auto;
+}
 
 /* Re-usable class */
 .container {
@@ -33,8 +33,28 @@ a {
     font-weight: 700 !important;
 }
 .bg-active {
-    background-color: #FF5400;
+    background-color: var(--primary-color);
     color: #FFF;
+}
+.section-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 2.4rem;
+}
+.section-p {
+    font-size: var(--primary-font-size);
+    line-height: 2.6rem;
+    color: #131318b3;
+    margin-bottom: 2.4rem;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 14px 35px;
+    margin-top: .8rem;
 }
 
 /* Header */
@@ -120,6 +140,27 @@ a {
     appearance: none;
 }
 
+/* Popular */
+.tour-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.3rem;
+}
+.tour-info {
+    width: 50%;
+}
+.tour-info ul {
+    margin-left: 2rem;
+    width: 90%;
+}
+.tour-img-container {
+    width: 46%;
+}
+.tour-img-container img {
+    width: 100%;
+}
+
 
 
 
@@ -131,9 +172,21 @@ a {
 
 /* For small devices */
 @media screen and (max-width: 600px) {
+    section {
+        margin: 2.4rem auto;
+    }
     /* Re-usable class */
     .container {
         width: 89.3%;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .section-p {
+        font-size: 1.4rem;
+    }
+    .btn-primary {
+        margin-top: 0;
     }
     /* header */
     .navbar {
@@ -178,6 +231,17 @@ a {
     }
     .banner-container .find-n-book {
         padding-bottom: 3.2rem;
+    }
+    /* Popular */
+    .tour-container {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+    .tour-info, .tour-img-container {
+        width: 100%;
+    }
+    .tour-info > ul {
+        width: 95%;
     }
     
 }
