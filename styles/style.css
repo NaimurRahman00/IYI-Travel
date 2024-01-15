@@ -1,0 +1,97 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #FF5400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+}
+/* section {
+    margin: 8rem;
+} */
+
+/* Re-usable class */
+.container {
+    width: 81.5%;
+    max-width: 1440px;
+    margin: auto;
+}
+.active {
+    color: var(--primary-color) !important;
+    font-weight: 700 !important;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5.2rem;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+.nav-logo h3 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    margin-left: 1.6rem;
+}
+.nav-link {
+    display: flex;
+    gap: 4.4rem;
+}
+.nav-link a {
+    font-size: 1.8rem;
+    color: #131318B2;
+}
+.hamburger {
+    color: #131318;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* For small devices */
+@media screen and (max-width: 600px) {
+    /* Re-usable class */
+    .container {
+        width: 89.3%;
+    }
+    .navbar {
+        margin-top: 2rem;
+    }
+    .nav-logo img {
+        width: 2.8rem;
+    }
+    .nav-logo h3 {
+        font-size: 2.2rem;
+        margin-left: 1rem;
+    }
+    .nav-link {
+        display: none;
+    }
+    .hamburger {
+        display: inline-block;
+        font-size: 2.4rem;
+    }
+    
+}
