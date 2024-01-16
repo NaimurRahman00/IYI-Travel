@@ -330,8 +330,35 @@ section {
     font-weight: 800;
     margin-bottom: 2.4rem;
 }
-
-
+/* Spot blog and video */
+.spot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.8rem;
+}
+.spot-info {
+    width: 45%;
+}
+.spot-video {
+    width: 53%;
+}
+.spot-info ul li {
+    width: 90%;
+    margin-left: 1.5rem;
+    color: #131318;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+}
+.spot-video iframe {
+    width: 100%;
+    height: 42.4rem;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    -ms-border-radius: 1.6rem;
+    -o-border-radius: 1.6rem;
+}
 
 
 
@@ -510,5 +537,22 @@ section {
     }
     .see-all-btn {
         display: none;
+    }
+    /* Spot blog and video */
+    .spot-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.8rem;
+        flex-direction: column;
+    }
+    .spot-info {
+        width: 100%;
+    }
+    .spot-video {
+        width: 100%;
+    }
+    .spot-video iframe {
+        height: 22rem;
     }
 }
