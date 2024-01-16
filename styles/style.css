@@ -227,6 +227,86 @@ section {
     font-size: 2.8rem;
     font-weight: 800;
 }
+/* What you will get with us */
+.service-title {
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    margin-top: 7.5rem;
+}
+.service-info {
+    width: 45%;
+}
+.service-info .num-badge {
+    width: 7rem;
+    height: 3.5rem;
+    background-color: var(--primary-color);
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+.service-info .num-badge h6 {
+    font-size: 1.8rem;
+    margin: .4rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-info h3 {
+    font-size: 2.4rem;
+    color: #131318;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.service-info p {
+    font-size: var(--primary-font-size);
+    margin-bottom: 4rem;
+}
+.service-img {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.service-img .service-img1 {
+    width: 55%;
+    position: relative;
+    right: -.8rem;
+}
+.service-img .service-img2 {
+    width: 55%;
+    border: 1rem solid rgb(255, 255, 255);
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    position: absolute;
+    top: 21rem;
+    right: 18rem;
+}
+.service-img img {
+    width: 100%;
+}
+
 /* Why choose us */
 .why-choose-us-info {
     display: flex;
@@ -582,6 +662,40 @@ footer {
         font-size: 2rem;
         font-weight: 700;
     }
+    /* What you will get with us */
+    .services-container {
+        margin-top: 2rem;
+    }
+    .services-container {
+        flex-direction: column;
+    }
+    .service-info {
+        width: 100%;
+    }
+    .service-info p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    .service-img {
+        width: 100%;
+        align-items: center;
+    }
+    .service-img .service-img1 {
+        right: -6.5rem;
+    }
+    .service-img .service-img2 {
+        top: -5rem;
+        right: 15rem;
+        border: none;
+    }
+    .service-img .service-img2 img {
+        border: .5rem solid #FFF;
+        border-radius: 1.8rem;
+        -webkit-border-radius: 1.8rem;
+        -moz-border-radius: 1.8rem;
+        -ms-border-radius: 1.8rem;
+        -o-border-radius: 1.8rem;
+}
     /* Why choose us */
     .why-choose-us-container .text-center {
         width: 90%;
