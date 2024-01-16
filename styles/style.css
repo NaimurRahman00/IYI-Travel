@@ -359,6 +359,81 @@ section {
     -ms-border-radius: 1.6rem;
     -o-border-radius: 1.6rem;
 }
+/* Newsletter */
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter {
+    width: 39%;
+}
+.newsletter form {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 4rem;
+    height: 42.2rem;
+}
+.newsletter form h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+    font-weight: 800;
+    color: #131318;
+}
+.newsletter form input {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #1313180d;
+    padding: 1.6rem 2rem;
+    width: 100%;
+    margin-bottom: 1.6rem;
+    color: #131318;
+    font-size: var(--primary-font-size);
+}
+.newsletter form hr {
+    background-color: #1313181a;
+    margin-bottom: 2.4rem;
+}
+.newsletter form .btn-primary {
+    width: 100%;
+}
+.newsletter-img {
+    width: 59%;
+    position: relative;
+}
+.newsletter-img img {
+    width: 100%;
+    height: 42.2rem;
+}
+.newsletter-img .discount-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #FFF;
+    background-color: var(--primary-color);
+    width: 32.4rem;
+    height: 12rem;
+    text-align: center;
+    padding: 2rem;
+    transform: translate(-1rem, -5.5rem) rotate(-20deg);
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    -ms-border-radius: 1.6rem;
+    -o-border-radius: 1.6rem;
+    -webkit-transform: translate(-1rem, -5.5rem) rotate(-20deg);
+    -moz-transform: translate(-1rem, -5.5rem) rotate(-20deg);
+    -ms-transform: translate(-1rem, -5.5rem) rotate(-20deg);
+    -o-transform: translate(-1rem, -5.5rem) rotate(-20deg);
+}
+.newsletter-img .discount-badge h4 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.newsletter-img .discount-badge h3 {
+    font-size: 3.2rem;
+}
+
 
 
 
@@ -554,5 +629,41 @@ section {
     }
     .spot-video iframe {
         height: 22rem;
+    }
+    /* Newsletter */
+    .newsletter-container {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+    .newsletter {
+        width: 100%;
+    }
+    .newsletter form {
+        padding: 2.4rem;
+        height: auto;
+    }
+    .newsletter-img {
+        width: 100%;
+    }
+    .newsletter-img img {
+        height: 28rem;
+    }
+    .newsletter-img .discount-badge {
+        width: 21.5rem;
+        height: 8rem;
+        padding: 1.5rem 2rem;
+        transform: translate(-.5rem, -3.5rem) rotate(-20deg);
+        -webkit-transform: translate(-.5rem, -3.5rem) rotate(-20deg);
+        -moz-transform: translate(-.5rem, -3.5rem) rotate(-20deg);
+        -ms-transform: translate(-.5rem, -3.5rem) rotate(-20deg);
+        -o-transform: translate(-.5rem, -3.5rem) rotate(-20deg);
+}
+    .newsletter-img .discount-badge h4 {
+        font-size: var(--primary-font-size);
+        margin-bottom: -.5rem;
+    }
+    .newsletter-img .discount-badge h3 {
+        font-size: 2.2rem;
+        margin-top: -.5rem;
     }
 }
