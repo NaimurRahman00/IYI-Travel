@@ -61,6 +61,11 @@ section {
     justify-content: center;
     align-items: center;
 }
+.text-center {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+}
 
 /* Header */
 .navbar {
@@ -167,11 +172,6 @@ section {
 }
 
 /* Destination */
-.destination-container h2, .destination-container p {
-    text-align: center;
-    width: 55%;
-    margin: auto;
-}
 .destination-container p {
     margin-bottom: 4.8rem;
 }
@@ -227,6 +227,43 @@ section {
     font-size: 2.8rem;
     font-weight: 800;
 }
+/* Why choose us */
+.why-choose-us-info {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    row-gap: 4.8rem;
+    flex-wrap: wrap;
+    margin-top: 4.8rem;
+}
+.choose-us-card1, .choose-us-card2, .choose-us-card3 {
+    width: 48%;
+    padding: 3.2rem 3.2rem 0;
+}
+.choose-us-card1 {
+    border-radius: 16px;
+    border: 1px solid #fbb56333;
+    background: #fbb5630d;
+}
+.choose-us-card2 {
+    border-radius: 16px;
+    border: 1px solid #29cef633;
+    background: #29cef60d;
+}
+.choose-us-card3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+.choose-us-card1 img, .choose-us-card2 img, .choose-us-card3 img {
+    margin-bottom: 3.2rem;
+}
+.choose-us-card1 h4, .choose-us-card2 h4, .choose-us-card3 h4 {
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 1.6rem;
+}
 
 
 
@@ -251,6 +288,7 @@ section {
     }
     .section-p {
         font-size: 1.4rem;
+        line-height: 2.4rem;
     }
     .btn-primary {
         margin-top: 0;
@@ -334,5 +372,24 @@ section {
         font-size: 2rem;
         font-weight: 700;
     }
-    
+    /* Why choose us */
+    .why-choose-us-container .text-center {
+        width: 90%;
+        margin-bottom: 1.6rem !important;
+    }
+    .why-choose-us-info {
+        flex-direction: column;
+        gap: 1.6rem;
+        margin-top: 1.6rem;
+    }
+    .choose-us-card1, .choose-us-card2, .choose-us-card3 {
+        width: 100%;
+    }
+    .choose-us-card1 img, .choose-us-card2 img, .choose-us-card3 img {
+        margin-bottom: 1.6rem;
+        width: 4.8rem;
+    }
+    .choose-us-card1 h4, .choose-us-card2 h4, .choose-us-card3 h4 {
+        font-size: 2rem;
+    }
 }
