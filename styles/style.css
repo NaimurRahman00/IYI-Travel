@@ -40,7 +40,7 @@ section {
     font-size: 4rem;
     font-weight: 800;
     color: #131318;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.4rem !important;
 }
 .section-p {
     font-size: var(--primary-font-size);
@@ -55,6 +55,11 @@ section {
     font-weight: 700;
     padding: 14px 35px;
     margin-top: .8rem;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Header */
@@ -161,6 +166,68 @@ section {
     width: 100%;
 }
 
+/* Destination */
+.destination-container h2, .destination-container p {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+}
+.destination-container p {
+    margin-bottom: 4.8rem;
+}
+.places {
+    display: grid;
+    grid-template-areas: 
+    "img1 img1 img1 img1 img1 img1 img2 img2 img2 img2 img2 img2"
+    "img3 img3 img3 img3 img4 img4 img4 img4 img4 img5 img5 img5"
+    "img6 img6 img6 img6 img6 img7 img7 img7 img7 img7 img7 img7" ;
+    gap: 2.4rem;
+}
+.places img {
+    width: 100%;
+}
+.place1 { 
+    grid-area: img1;
+    position: relative;
+    width: 100%;
+}
+.place2 { 
+    grid-area: img2;
+    position: relative;
+    width: 100%;
+}
+.place3 { 
+    grid-area: img3;
+    position: relative;
+    width: 100%;
+}
+.place4 { 
+    grid-area: img4;
+    position: relative;
+    width: 100%;
+}
+.place5 { 
+    grid-area: img5;
+    position: relative;
+    width: 100%;
+}
+.place6 { 
+    grid-area: img6;
+    position: relative;
+    width: 100%;
+}
+.place7 { 
+    grid-area: img7;
+    position: relative;
+    width: 100%;
+}
+.places .img-caption {
+    position: absolute;
+    color: #FFF;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
 
 
 
@@ -242,6 +309,30 @@ section {
     }
     .tour-info > ul {
         width: 95%;
+    }
+    /* Places */
+    .destination-container h2, .destination-container p {
+        width: 90%;
+        margin-bottom: 1.6rem;
+    }
+    .places {
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7";
+        gap: 1.6rem;
+    }
+    .places img {
+        height: 17.5rem;
+    }
+    .places .img-caption {
+        font-size: 2rem;
+        font-weight: 700;
     }
     
 }
